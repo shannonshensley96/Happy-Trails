@@ -10,9 +10,6 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
- 
-  <header class="navbar-fixed">
-
     <nav id="navigation">
       <div><a href="/" class="left brand-logo" id="logo">&nbsp;&nbsp;Happy Trails</a></div>
       <div id="links"><a href="{% url 'about' %}">About</a>
@@ -26,7 +23,6 @@
       {% endif %}
     </nav>
     
-  </header>
   <main class="container">
     {% if user.is_authenticated %}
     <p class="username">Welcome back, {{ user.username}}!</p>
